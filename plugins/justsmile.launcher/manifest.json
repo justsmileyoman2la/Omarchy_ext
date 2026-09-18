@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "justsmile.launcher",
+  "name": "Launcher",
+  "version": "1.0.0",
+  "author": "justsmile",
+  "license": "MIT",
+  "description": "Custom program launcher for the bar",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "Launcher.qml"
+  },
+  "barWidget": {
+    "displayName": "Launcher",
+    "description": "Quick access to your favorite programs",
+    "category": "System",
+    "aliases": ["launcher", "apps"],
+    "allowMultiple": false,
+    "defaults": {
+      "apps": [
+        { "name": "Browser", "command": "yandex-browser", "icon": "󰖟" },
+        { "name": "Terminal", "command": "alacritty", "icon": "󰆏" },
+        { "name": "Files", "command": "nautilus", "icon": "󰉋" },
+        { "name": "Settings", "command": "gnome-control-center", "icon": "󰒓" }
+      ]
+    },
+    "schema": [
+      {
+        "key": "apps",
+        "type": "array",
+        "label": "Applications",
+        "description": "List of applications to show in the launcher",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string", "label": "Name" },
+            "command": { "type": "string", "label": "Command" },
+            "icon": { "type": "string", "label": "Icon (nerd font)" }
+          }
+        }
+      }
+    ]
+  }
+}

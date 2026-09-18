@@ -1,0 +1,97 @@
+{
+  "bar": {
+    "centerAnchor": "omarchy.clock",
+    "layout": {
+      "center": [
+        {
+          "id": "omarchy.indicators"
+        },
+        {
+          "format": "dddd, d MMMM HH:mm",
+          "formatAlt": "d MMMM 'W'ww yyyy",
+          "id": "justsmile.clock",
+          "verticalFormat": "HH\n—\nmm"
+        },
+        {
+          "id": "justsmile.launcher"
+        },
+        {
+          "id": "justsmile.weather",
+          "unit": "metric"
+        },
+        {
+          "id": "omarchy.system-update"
+        }
+      ],
+      "left": [
+        {
+          "id": "justsmile.workspaces"
+        },
+        {
+          "id": "justsmile.active-window"
+        },
+        {
+          "id": "itdir.cava"
+        }
+      ],
+      "right": [
+        {
+          "hidden": [],
+          "id": "justsmile.tray",
+          "pinned": []
+        },
+        {
+          "id": "remco.wireguard"
+        },
+        {
+          "id": "crmne.omastats",
+          "barLabels": "icon",
+          "cpuStyle": "text",
+          "historySeconds": 60,
+          "memoryStyle": "text",
+          "modules": "cpu,memory",
+          "networkStyle": "text",
+          "refreshSeconds": 5,
+          "showActivity": false,
+          "showCores": false,
+          "showLoad": false,
+          "tabs": "cpu,memory,disks,battery",
+          "showProcesses": true
+        },
+        {
+          "id": "omarchy.agents"
+        },
+        {
+          "id": "omarchy.network"
+        },
+        {
+          "id": "justsmile.audio"
+        },
+        {
+          "id": "omarchy.keyboard-layout"
+        },
+        {
+          "id": "omarchy.power"
+        },
+        {
+          "id": "omarchy.menu"
+        }
+      ]
+    },
+    "position": "top",
+    "transparent": true
+  },
+  "idle": {
+    "lock": 300,
+    "screensaver": 150
+  },
+  "plugins": [
+    {
+      "id": "wmfeht.border-fx"
+    },
+    {
+      "id": "justsmile.launcher"
+    }
+  ],
+  "version": 1
+}

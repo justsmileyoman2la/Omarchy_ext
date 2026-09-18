@@ -1,0 +1,18 @@
+# Third-party plugins (have their own git repos)
+plugins/crmne.omastats/
+plugins/wmfeht.border-fx/
+plugins/remco.wireguard/
+plugins/itdir.cava/
+plugins/jrmmhm.pocket/
+plugins/io.github.codesmith28.omalt-tab/
+plugins/io.github.tyrichards.tray/
+
+# Backup directories
+plugins/.justsmile.menu.bak.*/
+plugins/.remco.wireguard.bak.*/
+
+# VPN configs (contain private keys)
+vpn/
+
+# Default sample files
+defaults/alacritty.toml.tpl.sample
