@@ -7,7 +7,7 @@
 ```
 Left:    Workspaces │ Active Window │ CAVA
 Center:  Indicators │ Clock │ Launcher │ Weather │ System Update
-Right:   Tray │ WireGuard │ OmaStats │ Agents │ Network │ Audio │ Keyboard │ Power │ Menu
+Right:   Tray │ WireGuard │ OmaStats │ Agents │ Network │ Keyboard │ Audio │ Power │ Menu
 ```
 
 ## Кастомные плагины
@@ -28,7 +28,7 @@ Right:   Tray │ WireGuard │ OmaStats │ Agents │ Network │ Audio │ Ke
 
 - [crmne.omastats](https://github.com/crmne/omastats) — мониторинг системы
 - [wmfeht.border-fx](https://github.com/wmfeht/border-fx) — эффекты границ окон
-- [remco.wireguard](https://github.com/remco-wireguard/omarchy-wireguard) — WireGuard VPN
+- [remco.wireguard](https://github.com/remco-wireguard/omarchy-wireguard) — WireGuard VPN (цвета инвертированы: серый = работает, красный = выключен)
 - [itdir.cava](https://github.com/itdir/cava-omarchy) — аудио визуализатор
 - [jrmmhm.pocket](https://github.com/jrmmhm/pocket) — pocket layout
 
