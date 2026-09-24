@@ -36,6 +36,9 @@
       ],
       "right": [
         {
+          "id": "justsmile.countdown"
+        },
+        {
           "hidden": [],
           "id": "justsmile.tray",
           "pinned": []
@@ -65,10 +68,10 @@
           "id": "omarchy.network"
         },
         {
-          "id": "justsmile.audio"
+          "id": "omarchy.keyboard-layout"
         },
         {
-          "id": "omarchy.keyboard-layout"
+          "id": "justsmile.audio"
         },
         {
           "id": "omarchy.power"
@@ -86,9 +89,6 @@
     "screensaver": 150
   },
   "plugins": [
-    {
-      "id": "wmfeht.border-fx"
-    },
     {
       "id": "justsmile.launcher"
     }
