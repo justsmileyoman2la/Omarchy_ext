@@ -5,32 +5,33 @@
 ## Панель (Bar Layout)
 
 ```
-Left:    Workspaces │ Active Window │ CAVA
+Left:    Workspaces │ CAVA │ Active Window
 Center:  Indicators │ Clock │ Launcher │ Weather │ System Update
-Right:   Tray │ WireGuard │ OmaStats │ Agents │ Network │ Keyboard │ Audio │ Power │ Menu
+Right:   Countdown │ Tray │ WireGuard │ OmaStats │ Agents │ Network │ Keyboard │ Audio │ Power │ Menu
 ```
 
 ## Кастомные плагины
 
 | Плагин | Описание |
 |--------|----------|
-| `justsmile.launcher` | Лончер приложений — иконка в баре, появляется при hover, открывает панель с apps (chromium, foot, nautilus) |
-| `justsmile.clock` | Кастомные часы с календарём |
-| `justsmile.weather` | Виджет погоды |
+| `justsmile.launcher` | Лончер приложений — иконка в баре, появляется при hover, открывает панель с apps |
+| `justsmile.clock` | Кастомные часы с календарём (dddd, d MMMM HH:mm) |
+| `justsmile.weather` | Виджет погоды (metric) |
 | `justsmile.audio` | Управление звуком |
 | `justsmile.active-window` | Заголовок активного окна |
 | `justsmile.workspaces` | Индикатор рабочих столов |
 | `justsmile.tray` | Системный трей |
+| `justsmile.countdown` | Таймер обратного отсчёта |
 
 ## Сторонние плагины
 
 Устанавливаются отдельно (не включены в репо):
 
-- [crmne.omastats](https://github.com/crmne/omastats) — мониторинг системы
+- [crmne.omastats](https://github.com/crmne/omastats) — мониторинг системы (CPU, RAM, диски, батарея)
 - [wmfeht.border-fx](https://github.com/wmfeht/border-fx) — эффекты границ окон
 - [remco.wireguard](https://github.com/remco-wireguard/omarchy-wireguard) — WireGuard VPN (цвета инвертированы: серый = работает, красный = выключен)
-- [itdir.cava](https://github.com/itdir/cava-omarchy) — аудио визуализатор
-- [jrmmhm.pocket](https://github.com/jrmmhm/pocket) — pocket layout
+- [my.cava](https://github.com/itdir/cava-omarchy) — аудио визуализатор
+- [io.github.ol4vr.languages](https://github.com/ol4vr/languages) — переключатель раскладки клавиатуры
 
 ## Структура
 
@@ -69,3 +70,9 @@ omarchy restart shell
 Для изменения списка приложений отредактируй `apps` в:
 - `plugins/justsmile.launcher/Launcher.qml`
 - `plugins/justsmile.launcher/Panel.qml`
+
+## Настройки
+
+- **Idle**: lock 300s, screensaver 150s
+- **Bar**: position top, transparent
+- **Позиция панели**: верхняя, прозрачная
