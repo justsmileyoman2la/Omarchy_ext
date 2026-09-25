@@ -71,6 +71,49 @@ omarchy restart shell
 - `plugins/justsmile.launcher/Launcher.qml`
 - `plugins/justsmile.launcher/Panel.qml`
 
+## Закладки (Yandex → Brave)
+
+При переходе с Yandex Browser на Brave экспортированы закладки и табло.
+
+### Расширение: Bookmarks But Better
+
+Визуальный менеджер закладок с папками, drag-and-drop, masonry-сеткой.
+
+```bash
+# Сборка
+git clone https://github.com/farhadeidi/bookmarks-but-better.git /tmp/bookmarks-but-better
+cd /tmp/bookmarks-but-better && bun install && bun run build:chrome
+cp -r dist-chrome ~/.local/share/bookmarks-but-better
+```
+
+Загрузка в Brave: `brave://extensions` → Developer mode → Load unpacked → `~/.local/share/bookmarks-but-better`
+
+### Экспорт из Yandex Browser
+
+Закладки: `~/.config/yandex-browser/Default/Bookmarks` (JSON) → конвертация в HTML:
+
+```bash
+python3 -c "
+import json
+with open('~/.config/yandex-browser/Default/Bookmarks') as f:
+    d = json.load(f)
+# ... конвертация в NETSCAPE-Bookmark-file-1 HTML
+"
+```
+
+Табло (speed dial): данные в LevelDB (`Sync Data/LevelDB/`) — protobuf, URLs извлечены вручную.
+
+### Папки закладок
+
+| Папка | Содержимое |
+|-------|------------|
+| Работа | HRM, OTRS, Jira, Confluence, VPN Citrix (12 ссылок) |
+| Соцсети | VK, Instagram, YouTube, Twitch, Дзен |
+| Форумы | 4PDA, Пикабу, RuTracker |
+| Магазины | Авито, Ozon |
+| Яндекс | Почта, Музыка, Диск, Переводчик |
+| Развлечения | Whitescreen, Больше чем игра |
+
 ## Настройки
 
 - **Idle**: lock 300s, screensaver 150s
